@@ -50,5 +50,5 @@ var num = 100;
 console.log("Half of 100 is 50");
 
 var num1 = 200;
-console.log(`Half of ${num1} is ${num1/2}`);
+console.log(`Half of ${num1} is ${num1/2}`);  // this is for backticks
 
