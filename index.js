@@ -2,7 +2,7 @@
 // var let const
 
 // variable declaration
-var a; // we dont have to mention what datatype it is
+/*var a; // we dont have to mention what datatype it is
 
 //variable initialization
 a = 10;
@@ -50,5 +50,44 @@ var num = 100;
 console.log("Half of 100 is 50");
 
 var num1 = 200;
-console.log(`Half of ${num1} is ${num1/2}`);  // this is for backticks
+console.log(`Half of ${num1} is ${num1/2}`);*/  // this is for backticks
 
+
+
+
+//var has some problems
+//1) Redeclaration is allowed
+var r = "Hello";
+console.log(r);
+
+var r = 100;
+console.log(r);
+
+// Overcome krne k liye
+
+// let keyword is used
+let l = 100;
+console.log(l);
+
+//let l = 200;  //SyntaxError: Identifier 'l' has already been declared
+//console.log(l);
+
+l = 300;  //we can reinitialise it but can't redeclare it
+console.log(l);
+
+//loops in js
+var num = 10;
+
+for (var i = 0; i < num; i++){
+    if(i % 2 == 0){
+        console.log("num is even");
+    }
+}
+
+//const keyword
+const a = 2;
+console.log(a);
+// with this keyword we can't redeclare nor we can reinitilise
+//const a = 5;  //SyntaxError: Identifier 'a' has already been declared
+a = 4;  //TypeError: Assignment to constant variable.
+console.log("Hello");
