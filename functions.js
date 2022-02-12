@@ -7,7 +7,7 @@
     //do something
 }
 
-//function invoke
+//function invoke -> name of variable is used to invoke the function
 function_name(arg1, arg2);*/
 
 //1st way
@@ -27,7 +27,7 @@ add(2, 6);*/
 // -> Functions can be returned
 // -> Functions can be passed as parameters/arguments
 
-function calculator(str,a ,b){
+/*function calculator(str,a ,b){
     if (str == 'add') {
         return function add(){
             console.log(a + b);
@@ -38,15 +38,17 @@ function calculator(str,a ,b){
     //}
 }
 
-let returnedFunc = calculator('add', 2, 3);
+let returnedFunc = calculator('add', 2, 3);  //whole function is returning
 console.log("returned function is\n " + returnedFunc);
-returnedFunc();
-
-
-
-
+returnedFunc();*/
 
 
 // 2) Function Expression
 
+let sayHi = function abcd() {
+    console.log("Hello guys i am function expression!!!");
+}
 
+sayHi();
+console.log("" + sayHi);
+//abcd(); // error abcd is not defined
