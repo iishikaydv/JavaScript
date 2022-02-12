@@ -86,3 +86,4 @@ let addIIFE = (function add(a, b){
     return a + b;
 })(20, 30);  // function invoked 
 console.log("" + addIIFE);*/
+
