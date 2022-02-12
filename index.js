@@ -57,7 +57,7 @@ console.log(`Half of ${num1} is ${num1/2}`);*/  // this is for backticks
 
 //var has some problems
 //1) Redeclaration is allowed
-var r = "Hello";
+/*var r = "Hello";
 console.log(r);
 
 var r = 100;
@@ -73,21 +73,62 @@ console.log(l);
 //console.log(l);
 
 l = 300;  //we can reinitialise it but can't redeclare it
-console.log(l);
+console.log(l);*/
 
 //loops in js
 var num = 10;
 
-for (var i = 0; i < num; i++){
+/*for (var i = 0; i < num; i++){
     if(i % 2 == 0){
         console.log("num is even");
     }
-}
+}*/
 
 //const keyword
-const a = 2;
+/*const a = 2;
 console.log(a);
 // with this keyword we can't redeclare nor we can reinitilise
 //const a = 5;  //SyntaxError: Identifier 'a' has already been declared
 a = 4;  //TypeError: Assignment to constant variable.
-console.log("Hello");
+console.log("Hello");*/
+
+
+
+//2nd problem with var keyword
+//var keyword is function scoped in case of function else itg is global scope
+//let keyword is bock scoped
+
+/*for (var i = 0; i < num; i++){
+    if(i % 2 == 0){
+        console.log(i);
+    }
+}
+console.log("value of i is "+ i);*/
+
+/*for (let i = 0; i < num; i++){
+    if(i % 2 == 0){
+        console.log(i);
+    }
+}
+console.log("value of i is "+ i);*/  // to solve this problem below
+
+/*let i;
+for (i = 0; i < num; i++){
+    if(i % 2 == 0){
+        console.log(i);
+    }
+}
+console.log("value of i is "+ i);*/
+
+// let global and blocked scope
+let j = 10;
+for (i = 0; i < num; i++){
+    let j = 200;
+    if(i % 2 == 0){
+        console.log(i);
+    }
+    console.log("inner scope "+ j)
+}
+console.log("outer scope "+ j);
+
+
