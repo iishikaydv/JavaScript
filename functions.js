@@ -43,12 +43,29 @@ console.log("returned function is\n " + returnedFunc);
 returnedFunc();*/
 
 
+
+
 // 2) Function Expression
 
-let sayHi = function abcd() {
+/*let sayHi = function abcd() {
     console.log("Hello guys i am function expression!!!");
 }
 
 sayHi();
-console.log("" + sayHi);
+console.log("" + sayHi);*/
 //abcd(); // error abcd is not defined
+
+
+
+
+// 3) IIFE -> Immediately invoked function expression
+// jese h define kro vese h call ho jaye vps call na krna pde vo functions hote h IIFE
+
+function add(a, b){
+    return a + b;
+}
+add(2, 3)
+let addIIFE = (function add(a, b){
+    return a + b;
+})(20, 30);  // function invoked 
+console.log("" + addIIFE);
