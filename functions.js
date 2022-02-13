@@ -10,15 +10,15 @@
 //function invoke -> name of variable is used to invoke the function
 function_name(arg1, arg2);*/
 
-//1st way
+//1st way  ->  put function in variable and then print function through that variable
 /*function add(a, b){
     return a + b;
 }
 let ans = add(2, 6);
-console.log(ans);
+console.log(ans);*/
 
-//2nd way
-function add(a, b){
+//2nd way  ->  directly call it
+/*function add(a, b){
     console.log(a + b);
 }
 add(2, 6);*/
@@ -87,3 +87,24 @@ let addIIFE = (function add(a, b){
 })(20, 30);  // function invoked 
 console.log("" + addIIFE);*/
 
+
+
+
+
+// Practice - Calculator
+function add(a, b){
+    console.log(a + b);
+}
+function sub(a, b){
+    console.log(a - b);
+}
+function mul(a, b){
+    console.log(a * b);
+}
+function div(a, b){
+    console.log(a / b);
+}
+add(15, 3);
+sub(15, 3);
+mul(15, 3);
+div(15, 3);
