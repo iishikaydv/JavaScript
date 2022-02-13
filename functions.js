@@ -92,7 +92,7 @@ console.log("" + addIIFE);*/
 
 
 // Practice - Calculator
-function add(a, b){
+/*function add(a, b){
     console.log(a + b);
 }
 function sub(a, b){
@@ -107,4 +107,5 @@ function div(a, b){
 add(15, 3);
 sub(15, 3);
 mul(15, 3);
-div(15, 3);
+div(15, 3);*/
+
