@@ -54,12 +54,11 @@ let Array2d = [
 console.log(Array2d);  // Prints 2d array
 console.table(Array2d);  // Prints 2d array in the form of a table
 console.log(Array2d[3][1]);
+console.log(Array2d[1][3]);  //undefined
+
 
 let res = Array2d[1];
 console.log("Printing of res array: ");
 console.log(res);
 console.log("Res of 2nd Index: ");
 console.log(res[2]);
-
-
-//
