@@ -62,3 +62,8 @@ console.log("Printing of res array: ");
 console.log(res);
 console.log("Res of 2nd Index: ");
 console.log(res[2]);
+console.log(Array2d.length);  // Number of rows in 2d array
+console.log(Array2d[1].length);  // Number of column(element) in that particular array
+
+Array2d[0][1] = "Ishika";
+console.table(Array2d);
