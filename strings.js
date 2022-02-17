@@ -56,3 +56,21 @@ console.log(str.toLowerCase()); //yolo
 str = "fomo";
 console.log(str.toUpperCase());  //FOMO
 console.log(str);   // Information is intact and has not been tampered with
+
+// Concatenation Method  ->  To join two strings and make tehm one
+
+let firstStr = "Beleive in ";
+let secondStr = "yourself";
+
+let concatenatedStr = firstStr + secondStr;
+console.log(concatenatedStr);
+
+let concatStr = firstStr.concat(secondStr, " and me!!!");
+console.log(concatStr);
+
+// Trim method -> remove all white spaces
+let trimStr = "                   Hello      How are you        ";
+console.log(trimStr);
+console.log(trimStr.length);
+console.log(trimStr.trim());  //Removes the leading and trailing white space and line terminator characters from a string.
+console.log(trimStr.trim().length);
