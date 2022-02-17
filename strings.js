@@ -40,3 +40,19 @@ console.log(slicedStr);
 
 var slicedStr = str.slice(2, -4);  // Start se lekr peeche k end times index chod do
 console.log(slicedStr);
+
+// Substring Method
+// substr(start, lenght);  Start index se shuru hoga aur aage ke kitne characters capture krne h
+
+let ans = str.substr(2, 6);
+console.log(ans);
+console.log(str);
+
+// Replacing
+str = "YOLO";
+console.log(str);
+
+console.log(str.toLowerCase()); //yolo
+str = "fomo";
+console.log(str.toUpperCase());  //FOMO
+console.log(str);   // Information is intact and has not been tampered with
