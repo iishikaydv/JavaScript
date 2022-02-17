@@ -1,18 +1,15 @@
 // Arrays is a collection of elements.
 // in JS we can store different DataTypes in a single array
-
-let cars = ['BME','Audi','MG',1,2,3,4,true];
+let cars = ['BME','Audi','MG',1,2.6,3,4,true];
 console.log(cars);
 
 // Accessing the elements of array
-
 console.log(cars[0]);
 console.log(cars[1]);
 console.log(cars[4]);
 console.log(cars[7]);
 
 // Replacing elements in array
-
 cars[3] = "Mahindra";
 console.log(cars[3]);
 
@@ -43,13 +40,26 @@ console.log(cars);
 // Length
 console.log(cars.length);
 
-//2d array
+//2d array  ->  Arrays which consists of arrays [ Arrays of Arrays ] 
+["a","b","c"] // Array of strings
+[1,2,3]  // Array of numbers
 let Array2d = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
+    ["BMW", 2, null,45],
+    [4, true, 6],
+    [7, 8, "AUDI"],
+    [10,"Chiki",12]
+]  // Array of Array
+// ["a","b","c"] // Array of strings
+// [1,2,3]  // Array of numbers
+console.log(Array2d);  // Prints 2d array
+console.table(Array2d);  // Prints 2d array in the form of a table
+console.log(Array2d[3][1]);
 
-console.log(Array2d);
-console.table(Array2d);
-console.log(Array2d[1][2]);
+let res = Array2d[1];
+console.log("Printing of res array: ");
+console.log(res);
+console.log("Res of 2nd Index: ");
+console.log(res[2]);
+
+
+//
