@@ -74,3 +74,11 @@ console.log(trimStr);
 console.log(trimStr.length);
 console.log(trimStr.trim());  //Removes the leading and trailing white space and line terminator characters from a string.
 console.log(trimStr.trim().length);
+
+
+// Strings are immutable
+var str = "Ishika Yadav";
+console.log(str);
+console.log(str[4]);
+str[4] = "z";  
+console.log(str);
