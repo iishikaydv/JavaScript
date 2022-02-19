@@ -1,4 +1,6 @@
 // Javascripts objects are always in key value pair
+// Methods  ->  jo functions objects k andar bne ho unhe methods kehte h
+// Jo bhi strings bnti h vo ek type se object h hoti h
 
 let obj = {};    // Empty objects
 console.log(obj);
@@ -31,11 +33,13 @@ let captainAmerica = {
         city:"New York",
         country:"USA",
     },
-    sayHi: function(){
+    sayHi: function() {
         console.log(`Hello My name is ${this.firstName}`);
     }
-}
+};
 console.log(captainAmerica);
-
-// Methods  ->  jo functions objects k andar bne ho unhe methods kehte h
-// Jo bhi strings bnti h vo ek type se object h hoti h
+console.log(captainAmerica.friends);
+console.log(captainAmerica.friends[0]);
+console.log(captainAmerica.friends[1]);
+console.log(captainAmerica.friends[2]);
+console.log(captainAmerica.sayHi()); // Method Accesing
