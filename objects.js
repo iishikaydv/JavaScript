@@ -9,7 +9,7 @@ let person = {
     // Key : Value
     name:"Ishika",
     age:20,
-    phone:9826939101,
+    phone:0000000000,
     gender:"Female",
     height:"5'4",
 }
