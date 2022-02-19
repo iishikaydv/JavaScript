@@ -43,3 +43,12 @@ console.log(captainAmerica.friends[0]);
 console.log(captainAmerica.friends[1]);
 console.log(captainAmerica.friends[2]);
 captainAmerica.sayHi(); // Method Accesing
+
+// Array is also object
+let arr = {
+    0: "a",
+    1: "b",
+    2: 1,
+    3: true
+}
+console.log(arr);
