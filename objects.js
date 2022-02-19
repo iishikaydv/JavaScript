@@ -42,4 +42,4 @@ console.log(captainAmerica.friends);
 console.log(captainAmerica.friends[0]);
 console.log(captainAmerica.friends[1]);
 console.log(captainAmerica.friends[2]);
-console.log(captainAmerica.sayHi()); // Method Accesing
+captainAmerica.sayHi(); // Method Accesing
