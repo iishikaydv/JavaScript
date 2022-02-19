@@ -1,11 +1,13 @@
 // Javascripts objects are always in key value pair
 // Methods  ->  jo functions objects k andar bne ho unhe methods kehte h
 // Jo bhi strings bnti h vo ek type se object h hoti h
+// Property  ->  example string.length normal property uske andar koi value pdhi h
+// Methods  ->  example sayHi call krna pdhta h method ko
 
 let obj = {};    // Empty objects
 console.log(obj);
 
-let person = {
+let person = {      // Person object
     // Key : Value
     name:"Ishika",
     age:20,
@@ -31,7 +33,7 @@ let captainAmerica = {
     address: {
         state:"Manhattan",
         city:"New York",
-        country:"USA",
+        country:"USA"
     },
     sayHi: function() {
         console.log(`Hello My name is ${this.firstName}`);
@@ -43,6 +45,9 @@ console.log(captainAmerica.friends[0]);
 console.log(captainAmerica.friends[1]);
 console.log(captainAmerica.friends[2]);
 captainAmerica.sayHi(); // Method Accesing
+console.log(typeof captainAmerica.firstName);
+delete captainAmerica.lastName;
+console.log(captainAmerica.lastName);
 
 // Array is also object
 let arr = {
@@ -59,3 +64,12 @@ for(let Key in captainAmerica) {
     // Key variable k andar meri key ki value padi hui h
     console.log(captainAmerica[Key]);    // prints value  ->  using bracket notation
 }
+
+let car = {
+    name: "Ferrari",
+    model: 2022,
+    startEngine: function (){
+        console.log(`Starting the engine of the car ${this.name}`);
+    }
+}
+car.startEngine();
