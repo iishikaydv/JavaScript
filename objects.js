@@ -60,7 +60,7 @@ console.log(arr);
 
 // For loop in objects  ->  in keyword in JS is used to get keys from that object
 for(let Key in captainAmerica) {
-    console.log(Key);    // rpints key
+    console.log(Key);    // prints key
     // Key variable k andar meri key ki value padi hui h
     console.log(captainAmerica[Key]);    // prints value  ->  using bracket notation
 }
