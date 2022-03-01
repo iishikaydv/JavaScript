@@ -62,7 +62,7 @@ console.log(emojis);*/  // Error -> TypeError: Assignment to constant variable.
 console.log(emojis.length);*/  //No error
 
 //Question-6
-const add = function (x) {
+/*const add = function (x) {
     return x + x;
 }
 
@@ -71,4 +71,21 @@ function myFunc(num = 2, value = add(num)) {
 }
 
 myFunc();
-myFunc(3);
+myFunc(3);*/
+
+//Question-7
+//which of the following will modify the person object?
+const person = {
+    name : "Lydia Hallie",
+    address : {
+        street : "100 Main St.",
+    },
+};
+
+Object.freeze(person);  // Freezes object -> A frozen object can no longer be changed; freezing an object prevents new properties from being added to it, existing properties from being removed, prevents changing the enumerability, configurability, or writability of existing properties, and prevents the values of existing properties from being changed. 
+// Shallow Freeze -> only freezes array at level one
+//person.name = "Evan Bacon";
+//delete person.address;
+person.address.street = "101 Main St.";  // This will modify  ->  beacuse it will only freezes name and address (i.e. -> only one level freezes) street can be modified
+//person.pet = {name : "Mara"};
+console.log(person);
