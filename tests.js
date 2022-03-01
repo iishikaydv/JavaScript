@@ -54,8 +54,9 @@ console.log(emojis);*/  // No error
 /*emojis.splice(0, 2);
 console.log(emojis);*/  // No error
 // 3rd Option
-/*emojis = [...emojis, "Drinks"];
+/*emojis = [...emojis, "Drinks"];  // ...emojis -> Add krega usme ye 
+//lekin error dega kyunki const keyword se defined h usme 10 index se 11 nhi ho skte h
 console.log(emojis);*/  // Error -> TypeError: Assignment to constant variable.
 // 4th Option
 emojis.length = 0;
-console.log(emojis.length);  // Error ->
+console.log(emojis.length);  //No error
