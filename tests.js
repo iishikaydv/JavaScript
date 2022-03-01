@@ -58,5 +58,17 @@ console.log(emojis);*/  // No error
 //lekin error dega kyunki const keyword se defined h usme 10 index se 11 nhi ho skte h
 console.log(emojis);*/  // Error -> TypeError: Assignment to constant variable.
 // 4th Option
-emojis.length = 0;
-console.log(emojis.length);  //No error
+/*emojis.length = 0;
+console.log(emojis.length);*/  //No error
+
+//Question-6
+const add = function (x) {
+    return x + x;
+}
+
+function myFunc(num = 2, value = add(num)) {
+    console.log(num, value);
+}
+
+myFunc();
+myFunc(3);
