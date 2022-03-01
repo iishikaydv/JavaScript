@@ -96,7 +96,7 @@ console.log("Hello");*/
 
 //2nd problem with var keyword
 //var keyword is function scoped in case of function else itg is global scope
-//let keyword is bock scoped
+//let keyword is block scoped
 
 /*for (var i = 0; i < num; i++){
     if(i % 2 == 0){
