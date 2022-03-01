@@ -48,5 +48,8 @@ console.log(count);*/
 //Question-5
 const emojis = ["Christmas Tree","Santa Claus","Gifts","Star"];
 // 1st Option
-emojis.push("Reindeer")
+/*emojis.push("Reindeer")
+console.log(emojis);*/  // No error
+// 2nd Option
+emojis.splice(0, 2);
 console.log(emojis);  // No error
