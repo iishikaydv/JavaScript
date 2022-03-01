@@ -37,10 +37,16 @@ fruit.unshift("Cherry");
 console.log(fruit);*/
 
 //Question-4
-let count = 0;
+/*let count = 0;
 const nums = [0, 1, 2, 3];
 for(var i in nums){
     if (i) count = count + 1;
 }
 
-console.log(count);
+console.log(count);*/
+
+//Question-5
+const emojis = ["Christmas Tree","Santa Claus","Gifts","Star"];
+// 1st Option
+emojis.push("Reindeer")
+console.log(emojis);  // No error
