@@ -51,5 +51,11 @@ const emojis = ["Christmas Tree","Santa Claus","Gifts","Star"];
 /*emojis.push("Reindeer")
 console.log(emojis);*/  // No error
 // 2nd Option
-emojis.splice(0, 2);
-console.log(emojis);  // No error
+/*emojis.splice(0, 2);
+console.log(emojis);*/  // No error
+// 3rd Option
+/*emojis = [...emojis, "Drinks"];
+console.log(emojis);*/  // Error -> TypeError: Assignment to constant variable.
+// 4th Option
+emojis.length = 0;
+console.log(emojis.length);  // Error ->
