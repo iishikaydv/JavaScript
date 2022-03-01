@@ -22,6 +22,16 @@ if(a == 11){  // Checks Values
         this.email = email2;  
     },
 };
+
 user.updateEmail("new@email.com");
 console.log(user.email);*/  // This will be updated email  
 
+//Question-3
+const fruit = ["Banana","Orange","Apple"];
+
+fruit.slice(0, 1);  // Kha se kha tk element delete krna h (startIdx,num_of_elements_delete)
+// Does not change original value of arrays
+fruit.splice(0, 1);  // ye original arrays m change krega
+fruit.unshift("Cherry");
+
+console.log(fruit);
