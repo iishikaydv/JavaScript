@@ -89,3 +89,5 @@ Object.freeze(person);  // Freezes object -> A frozen object can no longer be ch
 person.address.street = "101 Main St.";  // This will modify  ->  beacuse it will only freezes name and address (i.e. -> only one level freezes) street can be modified
 //person.pet = {name : "Mara"};
 console.log(person);
+
+// Question-8
