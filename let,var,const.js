@@ -1,5 +1,4 @@
 console.log(x);
 var x = 10;
-console.log(x);
-let b = 100;
+let b = 100;    // This has to be initialised first
 console.log(b);
