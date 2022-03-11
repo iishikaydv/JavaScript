@@ -9,6 +9,6 @@ var obj = {
     hello:123
 }
 
-console.log(obj);
+console.log("Printed in temp "+obj);
 
-module.exports = obj;
+module.exports = obj;   // above obj (object) is exported
