@@ -91,3 +91,6 @@ var b = str.split("");
 console.log(b);
 var c = str.split("e");
 console.log(c);
+var str1 = "Hello hello my name hello is ishika";
+var d = str1.split("hello");
+console.log(d);
